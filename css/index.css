@@ -341,3 +341,29 @@ img {
   padding: 10px 0;
   border-radius: 10px;
 }
+.container {
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}
+.form {
+  margin-top: 30px;
+}
+.form label {
+  display: inline-block;
+  width: 80px;
+  margin: 7px 0;
+}
+a.confirm {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+a.confirm:hover {
+  background: #212529;
+  color: white;
+  border: 1px solid #212529;
+}
