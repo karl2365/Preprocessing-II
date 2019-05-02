@@ -68,6 +68,10 @@
     @media @phone {
       width: 95%;
     }
+    @media @tablet {
+      width: 90%;
+    }
+
 
     img {
       border-radius: 10px;
@@ -85,12 +89,21 @@
       flex-flow: column nowrap;
       
     }
+    @media @tablet {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
       @media @phone {
         width: 95%;
+      }
+      @media @tablet {
+        width: 80%;
       }
       .btn {
         .buttons();
