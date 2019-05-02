@@ -2,9 +2,20 @@
 
 .buttons {
     background: @button-bg;
-    color: white;
     width: 95%;
     text-align: center;
     padding: 10px 0;
     border-radius: 10px;
+    a {
+        text-decoration: none;
+        color: white;
+
+    }
+}
+.buttonsHover{
+    background: black;
+    a{
+        color: lighten(@button-bg, 20%);
+       
+    }
 }

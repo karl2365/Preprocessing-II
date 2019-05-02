@@ -1,10 +1,19 @@
 .buttons {
   background: #17A2B8;
-  color: white;
   width: 95%;
   text-align: center;
   padding: 10px 0;
   border-radius: 10px;
+}
+.buttons a {
+  text-decoration: none;
+  color: white;
+}
+.buttonsHover {
+  background: black;
+}
+.buttonsHover a {
+  color: #4cd3e9;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -335,11 +344,20 @@ img {
 }
 .home .content-pick .destination .btn {
   background: #17A2B8;
-  color: white;
   width: 95%;
   text-align: center;
   padding: 10px 0;
   border-radius: 10px;
+}
+.home .content-pick .destination .btn a {
+  text-decoration: none;
+  color: white;
+}
+.home .content-pick .destination .btn:hover {
+  background: black;
+}
+.home .content-pick .destination .btn:hover a {
+  color: #4cd3e9;
 }
 .container {
   width: 80%;
