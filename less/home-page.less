@@ -5,20 +5,35 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    @media @phone {
+      display: flex;
+      flex-flow: column nowrap;
+      
+      
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone{
+        width: 97%
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @phone{
+        width: 97%
+        
+      }
 
       img {
         border-radius: 10px;
+        
       }
     }
   }
@@ -26,6 +41,14 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    
+    @media @phone {
+      display: flex;
+      flex-flow: column nowrap;
+      .text-content {
+        order: -1;
+      }
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +65,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width: 95%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +80,18 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      display: flex;
+      flex-flow: column nowrap;
+      
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone {
+        width: 95%;
+      }
       .btn {
         .buttons();
       }
