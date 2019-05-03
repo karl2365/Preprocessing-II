@@ -1,1 +1,50 @@
 // Navigation Styles here
+
+.header {
+
+    .top {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 15px 0 10px 0;
+
+        @media @phone {
+            flex-flow: column nowrap;
+            align-content: center;
+    
+        }
+        
+    }
+    h1 {
+        width: 69%;
+        @media @phone {
+            align-items: center;
+            width: 37%;
+            
+        }
+         }
+
+    nav {
+        display: flex;
+        flex-flow: row nowrap;
+
+        a {
+            color: @font-color;
+            text-decoration: none;
+            margin: 0 15px;
+
+            &:hover {
+                color: white;
+                background: @font-color;
+           }
+        }
+    }
+    img {
+        border-top: 1px dashed @navigation-border;
+        margin-bottom: 10px;
+    }
+    p{
+        padding-bottom: 10px;
+        border-bottom: 1px dashed @navigation-border;
+    }
+}
